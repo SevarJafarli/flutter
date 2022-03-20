@@ -174,12 +174,12 @@ class _ExpandIconState extends State<ExpandIcon> with SingleTickerProviderStateM
       child: IconButton(
         padding: widget.padding,
         iconSize: widget.size,
-        color: _iconColor,
+        color: Colors.white,
         disabledColor: widget.disabledColor,
         onPressed: widget.onPressed == null ? null : _handlePressed,
         icon: RotationTransition(
           turns: _iconTurns,
-          child: const Icon(Icons.expand_more),
+          child: const Icon(Icons.arrow_drop_down),
         ),
       ),
     );
